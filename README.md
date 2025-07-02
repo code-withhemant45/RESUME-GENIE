@@ -19,7 +19,7 @@ A modern, customizable resume builder built with **React**, **TypeScript**, **Vi
 
 ## Demo
 
-> _Coming soon!_
+(https://resume-genie-yq44.vercel.app/)
 
 ---
 
