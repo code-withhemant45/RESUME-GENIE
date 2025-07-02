@@ -1,73 +1,120 @@
-# Welcome to your Lovable project
+# Resume Your Way
 
-## Project info
+A modern, customizable resume builder built with **React**, **TypeScript**, **Vite**, and [shadcn/ui](https://ui.shadcn.com/). Effortlessly create, edit, preview, and export beautiful resumes in your browser.
 
-**URL**: https://lovable.dev/projects/b2fd3a21-d304-43a0-abd1-a4f2e8102cca
+---
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Live Resume Editing**: Intuitive editor for personal details, experience, education, skills, projects, and certifications.
+- **Multiple Templates**: Switch between several professionally designed resume templates.
+- **Dark/Light Mode**: Toggle between light and dark themes.
+- **Import/Export**:
+  - Import from JSON or PDF (basic parsing).
+  - Export your resume as JSON or high-quality PDF.
+- **Auto-Save**: All changes are saved to your browser's local storage.
+- **No Account Required**: All data stays on your device.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b2fd3a21-d304-43a0-abd1-a4f2e8102cca) and start prompting.
+## Demo
 
-Changes made via Lovable will be committed automatically to this repo.
+> _Coming soon!_
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Getting Started
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v18+ recommended)
+- [pnpm](https://pnpm.io/) / [npm](https://www.npmjs.com/) / [yarn](https://yarnpkg.com/)
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone the repository
+$ git clone https://github.com/your-username/resume-your-way.git
+$ cd resume-your-way
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+# Install dependencies
+$ npm install
+# or
+$ pnpm install
+# or
+$ yarn install
 ```
 
-**Edit a file directly in GitHub**
+### Running Locally
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Start the development server
+$ npm run dev
+```
 
-**Use GitHub Codespaces**
+Open [http://localhost:8080](http://localhost:8080) in your browser.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Building for Production
 
-## What technologies are used for this project?
+```bash
+$ npm run build
+$ npm run preview
+```
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Usage
 
-## How can I deploy this project?
+- **Edit**: Fill in your personal, professional, and educational details.
+- **Switch Templates**: Use the template selector in preview mode.
+- **Import**: Bring in data from a JSON or PDF file.
+- **Export**: Download your resume as JSON or PDF.
+- **Auto-Save**: Your progress is saved automatically in your browser.
 
-Simply open [Lovable](https://lovable.dev/projects/b2fd3a21-d304-43a0-abd1-a4f2e8102cca) and click on Share -> Publish.
+---
 
-## Can I connect a custom domain to my Lovable project?
+## Technologies Used
 
-Yes, you can!
+- [React](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [shadcn/ui](https://ui.shadcn.com/) (Radix UI + Tailwind CSS)
+- [react-query](https://tanstack.com/query/latest)
+- [react-router-dom](https://reactrouter.com/)
+- [jsPDF](https://github.com/parallax/jsPDF), [html2canvas](https://github.com/niklasvh/html2canvas) (PDF export)
+- [pdf-parse](https://github.com/modesty/pdf-parse) (PDF import)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## Folder Structure
+
+```
+resume-your-way-main/
+├── public/           # Static assets
+├── src/
+│   ├── components/   # React components (editor, preview, sections, UI)
+│   ├── hooks/        # Custom React hooks
+│   ├── pages/        # Page components (Index, NotFound)
+│   ├── utils/        # Resume data types, import/export, helpers
+│   └── App.tsx       # Main app entry
+├── index.html        # HTML entry point
+├── package.json      # Project metadata & scripts
+└── ...
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please open issues or pull requests for bug fixes, features, or improvements.
+
+---
+
+
+---
+
+## Credits
+
+- [shadcn/ui](https://ui.shadcn.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [jsPDF](https://github.com/parallax/jsPDF)
+- [html2canvas](https://github.com/niklasvh/html2canvas)
+- [pdf-parse](https://github.com/modesty/pdf-parse) 
